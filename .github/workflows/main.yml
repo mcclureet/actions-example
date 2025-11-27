@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      -main
+
+  workflow_dispatch:
+
+jobs:
+  example:
+    name: Example Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Hi!"
+      - name: Step 2
+        run: echo "Hi, again"
